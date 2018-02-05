@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:27:52 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/31 16:26:11 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 14:58:39 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 static int	print(const char *out, int width, int left)
@@ -38,7 +37,7 @@ int			conversion_p(const char *format, va_list va, int *cmp)
 	width = 0;
 	find(format, specifier, &width, NULL);
 	correction_specifier(specifier, 0, 0, 0);
-	if (!(str = ft_itoa_base(va_arg(va, unsigned long), 16)))
+	if (!(str = ag_itoa_base(va_arg(va, unsigned long), 16)))
 		return (-1);
 	*cmp += print(str, width, specifier[3]);
 	ft_strdel(&str);

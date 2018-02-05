@@ -12,7 +12,7 @@ INC_FILE = ft_printf.h
 INC = $(addprefix includes/, $(INC_FILE))
 
 # Sources
-SRC_FILE = conversion.c corrections.c find.c ft_printf.c length_modifier.c print.c
+SRC_FILE = conversion.c corrections.c find.c ft_printf.c length_modifier.c print.c ft_itoa_long.c
 SRC_SUB_FILE = conversion_c.c conversion_c_cap.c conversion_d.c conversion_o.c conversion_p.c conversion_percent.c conversion_s.c conversion_s_cap.c conversion_u.c conversion_x.c
 SRC = $(addprefix src/, $(SRC_FILE)) $(addprefix src/conversions/, $(SRC_SUB_FILE))
 

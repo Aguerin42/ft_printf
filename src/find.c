@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 17:41:16 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/16 17:41:34 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 15:46:08 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 /*
 ** init_specifier_tab() initialise le tableau de specifier à 0.

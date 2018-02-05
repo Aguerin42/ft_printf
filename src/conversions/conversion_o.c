@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:28:15 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 16:28:26 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 14:57:38 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 /*
@@ -46,7 +45,7 @@ int			conversion_o(const char *format, va_list va, int *cmp, char c)
 		specifier[1] = 0;
 	if ((!nb && (size[1] == -1)))
 		str = NULL;
-	else if (!(str = ft_itoa_base(nb, 8)))
+	else if (!(str = ag_itoa_base(nb, 8)))
 		return (-1);
 	*cmp += print_r(str, size[0], size[1], specifier);
 	ft_strdel(&str);

@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 15:04:34 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/31 16:26:35 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 16:21:19 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 static int	print(const char *out, int width, int precision, int left)
@@ -27,7 +26,7 @@ static int	print(const char *out, int width, int precision, int left)
 	if (!left)
 		cmp += ft_putnchar(' ', width - length);
 	if (out)
-		cmp += ft_putnstr(out, length);
+		cmp += ag_putnstr(out, length);
 	if (left)
 		cmp += ft_putnchar(' ', width - length);
 	return (cmp);

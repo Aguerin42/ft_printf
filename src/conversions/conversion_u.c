@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:28:48 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 16:29:04 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 14:58:51 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 /*
@@ -36,7 +35,7 @@ int			conversion_u(const char *format, va_list va, int *cmp, char c)
 		nb = length_modifier_dou_cap(i, va);
 	if (!nb && size[1] == -1)
 		str = NULL;
-	else if (!(str = ft_itoa_base(nb, 10)))
+	else if (!(str = ag_itoa_base(nb, 10)))
 		return (-1);
 	*cmp += print_r(str, size[0], size[1], specifier);
 	ft_strdel(&str);

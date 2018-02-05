@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:22:43 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/31 16:25:27 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 15:49:33 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 static int	print(wchar_t out, int width, int left)
